@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
   <style type="text/css">
     #basemapslidercontainer {
       position: absolute;
@@ -29,8 +29,8 @@
       height: 600px
     }
   </style>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
   <script>
     $(document).ready(function() {
@@ -60,9 +60,9 @@
         maxZoom: 10,
         minZoom: 6,
         detectRetina: true
-      }).setView([47.5075, -122.3475], 2.5);
+      }).setView([48.432768746265886, -121.77224273957611], 2.5);
 
-      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
       var mytile = L.tileLayer('file:///C:/Users/Tom/Dropbox/geog458-maptiles/tiles/index/{z}/{x}/{y}.png', {
         maxZoom: 9,
